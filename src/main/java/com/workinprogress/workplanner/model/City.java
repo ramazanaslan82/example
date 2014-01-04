@@ -1,11 +1,10 @@
-package com.workinprogress.model;
+package com.workinprogress.workplanner.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "hbn_cities")
-public class City extends BasicLocationEntity {
+public class City extends Location {
 
 	public City(Long id, String title) {
 		super(id, title);

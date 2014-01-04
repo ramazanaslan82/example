@@ -3,10 +3,19 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="userHibernateDaoImpl" class="com.workinprogress.daoImpl.UserHibernateDaoImpl" />
+	<bean id="userHibernateDaoImpl" class="com.workinprogress.workplanner.daoImpl.UserHibernateDaoImpl" />
 	<alias name="userHibernateDaoImpl" alias="userDao" />
 
-	<bean id="cityHibernateDaoImpl" class="com.workinprogress.daoImpl.CityHibernateDaoImpl">
+	<bean id="cityHibernateDaoImpl" class="com.workinprogress.workplanner.daoImpl.CityHibernateDaoImpl">
 	</bean>
 	<alias name="cityHibernateDaoImpl" alias="cityDao" />
+
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${dataSource.connection.driver_class}"></property>
+		<property name="url" value="${dataSource.connection.url}"></property>
+		<property name="username" value="${dataSource.connection.username}"></property>
+		<property name="password" value="${dataSource.connection.password}"></property>
+	</bean>
 </beans>

@@ -1,12 +1,12 @@
-package com.workinprogress.daoImpl;
+package com.workinprogress.workplanner.daoImpl;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import com.workinprogress.dao.CityDao;
-import com.workinprogress.dao.HibernateUtils;
-import com.workinprogress.model.City;
+import com.workinprogress.workplanner.dao.CityDao;
+import com.workinprogress.workplanner.dao.HibernateUtils;
+import com.workinprogress.workplanner.model.City;
 
 public class CityHibernateDaoImpl implements CityDao {
 
@@ -18,7 +18,7 @@ public class CityHibernateDaoImpl implements CityDao {
 		sess.save(city);
 		System.out.println("City saved.. :"+city.toString());
 		sess.flush();
-		tx.rollback();
+		tx.commit();
 		return city.getId();
 	}
 

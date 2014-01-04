@@ -3,13 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="userServiceImpl" class="com.workinprogress.serviceImpl.UserServiceImpl">
+	<bean id="userServiceImpl" class="com.workinprogress.workplanner.serviceImpl.UserServiceImpl">
 		<constructor-arg index="0" ref="userDao"></constructor-arg>
 	</bean>
 	<alias name="userServiceImpl" alias="userService" />
 
-	<bean id="cityServiceImpl" class="com.workinprogress.serviceImpl.CityServiceImpl">
+	<bean id="cityServiceImpl" class="com.workinprogress.workplanner.serviceImpl.CityServiceImpl">
 		<constructor-arg index="0" ref="cityDao"></constructor-arg>
 	</bean>
 	<alias name="cityServiceImpl" alias="cityService"/>
+	
 </beans>

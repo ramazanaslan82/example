@@ -16,13 +16,13 @@
 		<property name="hibernate.validator.apply_to_ddl">false</property>
 		<property name="hibernate.validator.autoregister_listeners">false</property>
 
-		<mapping class="com.workinprogress.model.User" />
-		<mapping class="com.workinprogress.model.BasicLocationEntity" />
-		<mapping class="com.workinprogress.model.Address" />
-		<mapping class="com.workinprogress.model.Country" />
-		<mapping class="com.workinprogress.model.City" />
-		<mapping class="com.workinprogress.model.Town" />
-		<mapping class="com.workinprogress.model.Phone" />
+		<mapping class="com.workinprogress.workplanner.model.User" />
+		<mapping class="com.workinprogress.workplanner.model.Location" />
+		<mapping class="com.workinprogress.workplanner.model.Address" />
+		<mapping class="com.workinprogress.workplanner.model.Country" />
+		<mapping class="com.workinprogress.workplanner.model.City" />
+		<mapping class="com.workinprogress.workplanner.model.Town" />
+		<mapping class="com.workinprogress.workplanner.model.Phone" />
 		
 
 	</session-factory>

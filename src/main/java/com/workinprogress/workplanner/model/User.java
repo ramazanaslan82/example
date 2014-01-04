@@ -1,4 +1,4 @@
-package com.workinprogress.model;
+package com.workinprogress.workplanner.model;
 
 import javax.persistence.Column;
 import javax.persistence.Embedded;

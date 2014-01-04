@@ -1,6 +1,6 @@
-package com.workinprogress.dao;
+package com.workinprogress.workplanner.dao;
 
-import com.workinprogress.model.User;
+import com.workinprogress.workplanner.model.User;
 
 public interface UserDao {
 

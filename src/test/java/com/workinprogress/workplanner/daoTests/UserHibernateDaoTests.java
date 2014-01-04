@@ -1,16 +1,16 @@
-package com.workinprogress.daoTests;
+package com.workinprogress.workplanner.daoTests;
 
 import org.junit.Test;
 
-import com.workinprogress.dao.UserDao;
-import com.workinprogress.daoImpl.UserHibernateDaoImpl;
-import com.workinprogress.model.Address;
-import com.workinprogress.model.City;
-import com.workinprogress.model.Country;
-import com.workinprogress.model.Town;
-import com.workinprogress.model.User;
-import com.workinprogress.model.UserProfile;
-import com.workinprogress.model.UserStatus;
+import com.workinprogress.workplanner.dao.UserDao;
+import com.workinprogress.workplanner.daoImpl.UserHibernateDaoImpl;
+import com.workinprogress.workplanner.model.Address;
+import com.workinprogress.workplanner.model.City;
+import com.workinprogress.workplanner.model.Country;
+import com.workinprogress.workplanner.model.Town;
+import com.workinprogress.workplanner.model.User;
+import com.workinprogress.workplanner.model.UserProfile;
+import com.workinprogress.workplanner.model.UserStatus;
 
 public class UserHibernateDaoTests {
 

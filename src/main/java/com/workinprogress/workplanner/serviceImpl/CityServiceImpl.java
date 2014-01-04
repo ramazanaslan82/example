@@ -1,8 +1,8 @@
-package com.workinprogress.serviceImpl;
+package com.workinprogress.workplanner.serviceImpl;
 
-import com.workinprogress.dao.CityDao;
-import com.workinprogress.model.City;
-import com.workinprogress.service.CityService;
+import com.workinprogress.workplanner.dao.CityDao;
+import com.workinprogress.workplanner.model.City;
+import com.workinprogress.workplanner.service.CityService;
 
 public class CityServiceImpl implements CityService {
 

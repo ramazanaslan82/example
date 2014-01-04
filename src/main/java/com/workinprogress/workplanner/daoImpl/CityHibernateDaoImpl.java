@@ -3,11 +3,13 @@ package com.workinprogress.workplanner.daoImpl;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.stereotype.Repository;
 
 import com.workinprogress.workplanner.dao.CityDao;
 import com.workinprogress.workplanner.dao.HibernateUtils;
 import com.workinprogress.workplanner.model.City;
 
+@Repository
 public class CityHibernateDaoImpl implements CityDao {
 
 	@Override

@@ -3,12 +3,13 @@ package com.workinprogress.workplanner.daoImpl;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.stereotype.Repository;
 
 import com.workinprogress.workplanner.dao.HibernateUtils;
 import com.workinprogress.workplanner.dao.UserDao;
-import com.workinprogress.workplanner.model.Country;
 import com.workinprogress.workplanner.model.User;
 
+@Repository
 public class UserHibernateDaoImpl implements UserDao {
 
 	@Override

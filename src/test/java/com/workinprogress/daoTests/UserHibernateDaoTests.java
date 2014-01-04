@@ -3,7 +3,7 @@ package com.workinprogress.daoTests;
 import org.junit.Test;
 
 import com.workinprogress.dao.UserDao;
-import com.workinprogress.hibernateDaoImpl.UserHibernateDaoImpl;
+import com.workinprogress.daoImpl.UserHibernateDaoImpl;
 import com.workinprogress.model.Address;
 import com.workinprogress.model.City;
 import com.workinprogress.model.Country;

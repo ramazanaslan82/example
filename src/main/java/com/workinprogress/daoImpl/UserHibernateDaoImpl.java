@@ -1,4 +1,4 @@
-package com.workinprogress.hibernateDaoImpl;
+package com.workinprogress.daoImpl;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

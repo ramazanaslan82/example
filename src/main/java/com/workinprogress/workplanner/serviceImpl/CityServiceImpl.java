@@ -1,6 +1,9 @@
 package com.workinprogress.workplanner.serviceImpl;
 
+import java.util.Collection;
+
 import org.aspectj.weaver.patterns.ThisOrTargetAnnotationPointcut;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -39,6 +42,11 @@ public class CityServiceImpl implements CityService, ApplicationContextAware {
 	public void setApplicationContext(ApplicationContext arg0)
 			throws BeansException {
 		this.applicationContext = arg0;
+	}
+
+	@Override
+	public Collection<City> loadCities() {
+		return cityDao.loadCities();
 	}
 
 }

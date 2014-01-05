@@ -28,6 +28,11 @@ public abstract class Location implements Serializable {
 	@Size(max = 30)
 	private String title;
 
+	public Location()
+	{
+		
+	}
+	
 	public Location(Long id, String title) {
 		super();
 		this.id = id;

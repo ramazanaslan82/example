@@ -18,7 +18,7 @@ public class UserHibernateDaoTests {
 	public void loadUserTest()
 	{
 		UserDao userDao = new UserHibernateDaoImpl();
-		User user = userDao.loadUser(1L);
+		User user = userDao.loadUserOldType(1L);
 		System.out.println("Loaded user:" + user);
 	}
 	

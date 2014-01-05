@@ -19,6 +19,8 @@ public class WorkplannerEventHandler implements ApplicationListener {
 			System.out.println("********************* ");
 			Location location = ((LocationSaveEvent) event).getLocationObject();
 			System.out.println("********************* Wrote location data. Title:"+location.getTitle()+" with id:" + location.getId());
+		} else {
+			System.out.println("********************* Some event occured:)");
 		}
 	}
 	

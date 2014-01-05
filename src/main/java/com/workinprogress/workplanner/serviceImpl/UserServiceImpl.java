@@ -24,8 +24,17 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public User loadById(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		return userDao.loadUserOldType(id);
+	}
+
+	@Override
+	public Long saveUser(User user) {
+		return userDao.saveUser(user);
+	}
+
+	@Override
+	public User loadUser(Long id) {
+		return userDao.loadUser(id);
 	}
 
 }

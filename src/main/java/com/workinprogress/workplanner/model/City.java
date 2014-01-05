@@ -6,6 +6,10 @@ import javax.persistence.Table;
 @Entity
 public class City extends Location {
 
+	public City() {
+		super();
+	}
+
 	public City(Long id, String title) {
 		super(id, title);
 		// TODO Auto-generated constructor stub

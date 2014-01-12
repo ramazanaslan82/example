@@ -9,7 +9,7 @@ import com.workinprogress.workplanner.dao.DeviceDao;
 import com.workinprogress.workplanner.model.Device;
 import com.workinprogress.workplanner.service.DeviceService;
 
-@Service(value = "deviceService")
+@Service
 public class DeviceServiceImpl implements DeviceService {
 
 	@Autowired

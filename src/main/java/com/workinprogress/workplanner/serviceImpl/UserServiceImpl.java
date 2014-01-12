@@ -7,7 +7,7 @@ import com.workinprogress.workplanner.dao.UserDao;
 import com.workinprogress.workplanner.model.User;
 import com.workinprogress.workplanner.service.UserService;
 
-@Service(value = "userService")
+@Service
 public class UserServiceImpl implements UserService {
 
 	public UserServiceImpl() {

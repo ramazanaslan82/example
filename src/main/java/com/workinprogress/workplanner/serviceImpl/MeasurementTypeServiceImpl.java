@@ -9,7 +9,7 @@ import com.workinprogress.workplanner.dao.MeasurementTypeDao;
 import com.workinprogress.workplanner.model.MeasurementType;
 import com.workinprogress.workplanner.service.MeasurementTypeService;
 
-@Service(value = "measurementTypeService")
+@Service
 public class MeasurementTypeServiceImpl implements MeasurementTypeService {
 
 	@Autowired

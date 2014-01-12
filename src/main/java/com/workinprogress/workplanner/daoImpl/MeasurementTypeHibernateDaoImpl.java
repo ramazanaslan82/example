@@ -2,7 +2,10 @@ package com.workinprogress.workplanner.daoImpl;
 
 import java.util.List;
 
+import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.DetachedCriteria;
+import org.hibernate.criterion.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -27,8 +30,10 @@ public class MeasurementTypeHibernateDaoImpl implements MeasurementTypeDao {
 
 	@Override
 	public List<MeasurementType> loadTypes() {
-		// TODO Auto-generated method stub
-		return null;
+		DetachedCriteria detachedCriteria = DetachedCriteria.forClass(MeasurementType.class);
+		detachedCriteria.addOrder(Order.asc("id"));
+		Criteria criteria = detachedCriteria.getExecutableCriteria(sessionFactory.getCurrentSession());
+		return (List<MeasurementType>) criteria.list();
 	}
 
 }

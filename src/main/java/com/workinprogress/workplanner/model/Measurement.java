@@ -16,10 +16,18 @@ public class Measurement implements Serializable {
 	private Long id;
 
 	private String name;
-	
+
 	@ManyToOne
-	@JoinColumn(name="measurementTypeId")
+	@JoinColumn(name = "measurementTypeId")
 	private MeasurementType measurementType;
+
+	public MeasurementType getMeasurementType() {
+		return measurementType;
+	}
+
+	public void setMeasurementType(MeasurementType measurementType) {
+		this.measurementType = measurementType;
+	}
 
 	public Long getId() {
 		return id;

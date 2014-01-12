@@ -10,7 +10,7 @@ import com.workinprogress.workplanner.dao.CityDao;
 import com.workinprogress.workplanner.model.City;
 import com.workinprogress.workplanner.service.LocationService;
 
-@Service(value = "locationService")
+@Service
 public class LocationServiceImpl implements LocationService {
 
 	@Autowired

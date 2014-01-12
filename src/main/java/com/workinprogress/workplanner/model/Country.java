@@ -1,8 +1,10 @@
 package com.workinprogress.workplanner.model;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="hbn_countries")
 public class Country extends Location {
 
 	public Country() {

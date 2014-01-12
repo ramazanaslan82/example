@@ -3,17 +3,13 @@ package com.workinprogress.workplanner.model;
 import java.io.Serializable;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import org.hibernate.annotations.GenericGenerator;
-
-@Entity
-@Table(name = "hbn_location")
+@MappedSuperclass
 public abstract class Location implements Serializable {
 	
 	private static final long serialVersionUID = -5609461159377164525L;

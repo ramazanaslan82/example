@@ -8,19 +8,19 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.workinprogress.workplanner.dao.CityDao;
 import com.workinprogress.workplanner.model.City;
-import com.workinprogress.workplanner.service.CityService;
+import com.workinprogress.workplanner.service.LocationService;
 
-@Service(value = "cityService")
-public class CityServiceImpl implements CityService {
+@Service(value = "locationService")
+public class LocationServiceImpl implements LocationService {
 
 	@Autowired
 	private CityDao cityDao;
 	
-	public CityServiceImpl() {
+	public LocationServiceImpl() {
 		super();
 	}
 
-	public CityServiceImpl(CityDao cityDao) {
+	public LocationServiceImpl(CityDao cityDao) {
 		super();
 		this.cityDao = cityDao;
 	}

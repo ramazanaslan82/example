@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.workinprogress.workplanner.model.City;
 import com.workinprogress.workplanner.model.User;
-import com.workinprogress.workplanner.service.CityService;
+import com.workinprogress.workplanner.service.LocationService;
 import com.workinprogress.workplanner.service.UserService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -22,7 +22,7 @@ import com.workinprogress.workplanner.service.UserService;
 public class SpringTests {
 
 	@Autowired
-	private CityService cityService;
+	private LocationService locationService;
 	
 	@Autowired
 	private UserService userService;
@@ -55,14 +55,14 @@ public class SpringTests {
 	@Test
 	public void testLoadCities()
 	{
-		Collection<City> cities = cityService.loadCities();
+		Collection<City> cities = locationService.loadCities();
 		System.out.println(cities.size() + " adet sehir yuklendi..");
 	}
 	
 	@Test
 	public void testSaveCity() {
 		City city = new City(3l, "Afyon");
-		Long id = cityService.saveCity(city);
+		Long id = locationService.saveCity(city);
 		//applicationContext.publishEvent(new LocationSaveEvent(cityService, city));
 		System.out.println("city:" + city.toString() + " saved with id:" + id);
 	}

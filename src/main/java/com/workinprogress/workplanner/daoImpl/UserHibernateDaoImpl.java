@@ -1,9 +1,10 @@
 package com.workinprogress.workplanner.daoImpl;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.workinprogress.workplanner.dao.HibernateUtils;
@@ -16,7 +17,7 @@ public class UserHibernateDaoImpl implements UserDao {
 	//@Autowired
 	private SessionFactory sessionFactory;
 
-	@Autowired
+	//@Autowired
 	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
@@ -57,7 +58,9 @@ public class UserHibernateDaoImpl implements UserDao {
 	@Override
 	public User loadUser(Long id) {
 		Session currentSession = sessionFactory.getCurrentSession();
-		return (User) currentSession.load(User.class, id);
+		List<User> list = (List<User>) currentSession.createQuery("from User")
+				.list();
+		return list.get(0);
 	}
 
 }

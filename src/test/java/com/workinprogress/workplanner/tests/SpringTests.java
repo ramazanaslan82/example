@@ -5,12 +5,11 @@ import java.util.Collection;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.transaction.TransactionConfiguration;
+import org.springframework.transaction.annotation.Transactional;
 
-import com.workinprogress.workplanner.event.LocationSaveEvent;
 import com.workinprogress.workplanner.model.City;
 import com.workinprogress.workplanner.model.User;
 import com.workinprogress.workplanner.service.CityService;
@@ -18,6 +17,8 @@ import com.workinprogress.workplanner.service.UserService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:appcontext/beans-*.xml"})
+@Transactional
+@TransactionConfiguration(defaultRollback=false)
 public class SpringTests {
 
 	@Autowired
@@ -34,15 +35,19 @@ public class SpringTests {
 	
 	@Test
 	public void testSaveUser() {
+		System.out.println("Method started...");
 		User user = new User();
 		user.setFirstName("Ramazan");
 		user.setLastName("ASLAN");
 		Long lastInsertId = userService.saveUser(user);
+		System.out.println("User saved with id :"+lastInsertId);
 		System.out.println("LastInsertId:"+lastInsertId);
+		System.out.println("Method finished...");
 	}
 
 	@Test
 	public void loadUser() {
+		System.out.println("Loading user:1");
 		User user = userService.loadUser(1l);
 		System.out.println("Loaded user:"+user);
 	}
@@ -56,7 +61,7 @@ public class SpringTests {
 	
 	@Test
 	public void testSaveCity() {
-		City city = new City(1l, "Adana");
+		City city = new City(3l, "Afyon");
 		Long id = cityService.saveCity(city);
 		//applicationContext.publishEvent(new LocationSaveEvent(cityService, city));
 		System.out.println("city:" + city.toString() + " saved with id:" + id);

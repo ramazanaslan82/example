@@ -1,10 +1,13 @@
 package com.workinprogress.workplanner.model;
 
 import javax.persistence.Entity;
-import javax.persistence.Table;
 
 @Entity
 public class Town extends Location {
+
+	public Town() {
+		super();
+	}
 
 	public Town(Long id, String title) {
 		super(id, title);

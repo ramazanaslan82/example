@@ -15,8 +15,8 @@
 	<!-- <alias name="cityHibernateDaoImpl" alias="cityDao" /> -->
 
 
-	<context:annotation-config></context:annotation-config>
-	<context:component-scan base-package="com.workinprogress.workplanner.daoImpl"></context:component-scan>
+<!-- 	<context:annotation-config></context:annotation-config> -->
+<!-- 	<context:component-scan base-package="com.workinprogress.workplanner.daoImpl"></context:component-scan> -->
 
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -26,9 +26,10 @@
 		<property name="password" value="${dataSource.connection.password}"></property>
 	</bean>
 
-	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-		<constructor-arg index="0" ref="dataSource"></constructor-arg>
-	</bean>
+
+<!-- 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"> -->
+<!-- 		<constructor-arg index="0" ref="dataSource"></constructor-arg> -->
+<!-- 	</bean> -->
 
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">

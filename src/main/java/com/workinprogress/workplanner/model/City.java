@@ -1,10 +1,11 @@
 package com.workinprogress.workplanner.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
-import javax.persistence.Table;
 
 @Entity
-public class City extends Location {
+public class City extends Location implements Serializable {
 
 	public City() {
 		super();

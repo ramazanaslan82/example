@@ -1,4 +1,4 @@
-package com.workinprogress.workplanner.daoImpl;
+package com.workinprogress.workplanner.hibernateDao;
 
 import java.util.List;
 

@@ -1,7 +1,5 @@
 package com.workinprogress.workplanner.tests;
 
-import javax.validation.constraints.AssertTrue;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

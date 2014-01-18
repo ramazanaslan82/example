@@ -15,7 +15,7 @@ public class LocationServiceImpl implements LocationService {
 
 	@Autowired
 	private CityDao cityDao;
-	
+
 	public LocationServiceImpl() {
 		super();
 	}
@@ -24,9 +24,8 @@ public class LocationServiceImpl implements LocationService {
 		super();
 		this.cityDao = cityDao;
 	}
-	
-	public Long saveNewCity(City city)
-	{
+
+	public Long saveNewCity(City city) {
 		return cityDao.saveCity(city);
 	}
 

@@ -1,0 +1,56 @@
+19:11:15,188 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from file [C:\DEVELOPER\workinprogress\workplanner\target\classes\appcontext\beans-config.xml]
+19:11:15,570 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from file [C:\DEVELOPER\workinprogress\workplanner\target\classes\appcontext\beans-dao.xml]
+19:11:15,600 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from file [C:\DEVELOPER\workinprogress\workplanner\target\classes\appcontext\beans-service.xml]
+19:11:15,619 INFO  [GenericApplicationContext] Refreshing org.springframework.context.support.GenericApplicationContext@184f97: startup date [Sat Jan 18 19:11:15 GMT+02:00 2014]; root of context hierarchy
+19:11:15,817 INFO  [PropertySourcesPlaceholderConfigurer] Loading properties file from class path resource [application.properties]
+19:11:15,883 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c92718: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,cityHibernateDaoImpl,deviceHibernateDaoImpl,measurementHibernateDaoImpl,measurementTypeHibernateDaoImpl,userHibernateDaoImpl,deviceServiceImpl,locationServiceImpl,measurementServiceImpl,measurementTypeServiceImpl,userServiceImpl,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager,dataSource,sessionFactory,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+19:11:15,973 INFO  [DriverManagerDataSource] Loaded JDBC driver: com.mysql.jdbc.Driver
+19:11:16,241 INFO  [Version] HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+19:11:16,259 INFO  [Version] HHH000412: Hibernate Core {4.2.8.Final}
+19:11:16,264 INFO  [Environment] HHH000205: Loaded properties from resource hibernate.properties: {hibernate.enable_lazy_load_no_trans=true, hibernate.cache.region.factory_class=org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory, hibernate.cache.use_second_level_cache=false, hibernate.bytecode.use_reflection_optimizer=false, hibernate.cache.use_query_cache=false, hibernate.hbm2ddl.auto=update, hibernate.current_session_context_class=thread}
+19:11:16,265 INFO  [Environment] HHH000021: Bytecode provider name : javassist
+19:11:16,762 INFO  [Dialect] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:11:16,778 INFO  [LobCreatorBuilder] HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+19:11:17,099 INFO  [TransactionFactoryInitiator] HHH000399: Using default transaction strategy (direct JDBC transactions)
+19:11:17,108 INFO  [ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+19:11:17,202 INFO  [Version] HV000001: Hibernate Validator 5.0.1.Final
+19:11:17,904 INFO  [SchemaUpdate] HHH000228: Running hbm2ddl schema update
+19:11:17,904 INFO  [SchemaUpdate] HHH000102: Fetching database metadata
+19:11:17,922 INFO  [SchemaUpdate] HHH000396: Updating schema
+19:11:17,953 INFO  [TableMetadata] HHH000261: Table found: sugarcrm.hbn_cities
+19:11:17,953 INFO  [TableMetadata] HHH000037: Columns: [id, title]
+19:11:17,953 INFO  [TableMetadata] HHH000108: Foreign keys: []
+19:11:17,953 INFO  [TableMetadata] HHH000126: Indexes: [prımary]
+19:11:17,965 INFO  [TableMetadata] HHH000261: Table found: sugarcrm.hbn_countries
+19:11:17,965 INFO  [TableMetadata] HHH000037: Columns: [id, title]
+19:11:17,965 INFO  [TableMetadata] HHH000108: Foreign keys: []
+19:11:17,965 INFO  [TableMetadata] HHH000126: Indexes: [prımary]
+19:11:17,976 INFO  [TableMetadata] HHH000261: Table found: sugarcrm.hbn_devices
+19:11:17,977 INFO  [TableMetadata] HHH000037: Columns: [id, name]
+19:11:17,977 INFO  [TableMetadata] HHH000108: Foreign keys: []
+19:11:17,977 INFO  [TableMetadata] HHH000126: Indexes: [prımary]
+19:11:17,988 INFO  [TableMetadata] HHH000261: Table found: sugarcrm.hbn_measurement_types
+19:11:17,988 INFO  [TableMetadata] HHH000037: Columns: [id, name]
+19:11:17,989 INFO  [TableMetadata] HHH000108: Foreign keys: []
+19:11:17,989 INFO  [TableMetadata] HHH000126: Indexes: [prımary]
+19:11:17,991 INFO  [DatabaseMetaData] HHH000262: Table not found: hbn_measurements
+19:11:18,004 INFO  [TableMetadata] HHH000261: Table found: sugarcrm.hbn_phones
+19:11:18,004 INFO  [TableMetadata] HHH000037: Columns: [id, status, user_id, number, type]
+19:11:18,004 INFO  [TableMetadata] HHH000108: Foreign keys: []
+19:11:18,004 INFO  [TableMetadata] HHH000126: Indexes: [prımary]
+19:11:18,018 INFO  [TableMetadata] HHH000261: Table found: sugarcrm.hbn_towns
+19:11:18,018 INFO  [TableMetadata] HHH000037: Columns: [id, title]
+19:11:18,018 INFO  [TableMetadata] HHH000108: Foreign keys: []
+19:11:18,018 INFO  [TableMetadata] HHH000126: Indexes: [prımary]
+19:11:18,035 INFO  [TableMetadata] HHH000261: Table found: sugarcrm.hbn_users
+19:11:18,035 INFO  [TableMetadata] HHH000037: Columns: [city_id, id, town_id, user_name, first_name, status, country_id, password_hash, postal_code, last_name, address_line, profile]
+19:11:18,035 INFO  [TableMetadata] HHH000108: Foreign keys: [fk_2sdmmbrqfbppdi7eiatwtkkpl, fk_194abv1i7lf6lw8lkw8jg7740, fk_k1ygftv70tnsjdh8ohbq26135]
+19:11:18,035 INFO  [TableMetadata] HHH000126: Indexes: [uk_k1ygftv70tnsjdh8ohbq26135, uk_2sdmmbrqfbppdi7eiatwtkkpl, fk_2sdmmbrqfbppdi7eiatwtkkpl, fk_194abv1i7lf6lw8lkw8jg7740, uk_194abv1i7lf6lw8lkw8jg7740, prımary, fk_k1ygftv70tnsjdh8ohbq26135]
+19:11:18,038 INFO  [DatabaseMetaData] HHH000262: Table not found: hbn_measurements
+19:11:18,040 INFO  [DatabaseMetaData] HHH000262: Table not found: hbn_measurements
+19:11:18,689 INFO  [SchemaUpdate] HHH000232: Schema update complete
+19:11:18,891 INFO  [HibernateTransactionManager] Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@10d6024] of Hibernate SessionFactory for HibernateTransactionManager
+19:11:29,641 INFO  [TransactionalTestExecutionListener] Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@1abd962]; rollback [false]
+19:12:53,784 INFO  [TransactionalTestExecutionListener] Committed transaction after test execution for test context [TestContext@a59823 testClass = MeasurementTests, testInstance = com.workinprogress.workplanner.tests.MeasurementTests@1a734a0, testMethod = testSaveMeasurement@MeasurementTests, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@702fb1 testClass = MeasurementTests, locations = '{classpath:appcontext/beans-*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+19:12:53,793 INFO  [GenericApplicationContext] Closing org.springframework.context.support.GenericApplicationContext@184f97: startup date [Sat Jan 18 19:11:15 GMT+02:00 2014]; root of context hierarchy
+19:12:53,794 INFO  [DefaultListableBeanFactory] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c92718: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,cityHibernateDaoImpl,deviceHibernateDaoImpl,measurementHibernateDaoImpl,measurementTypeHibernateDaoImpl,userHibernateDaoImpl,deviceServiceImpl,locationServiceImpl,measurementServiceImpl,measurementTypeServiceImpl,userServiceImpl,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager,dataSource,sessionFactory,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
